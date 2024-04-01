@@ -1,9 +1,10 @@
-
+// Define the initial state with an empty tasks array
 const initialState = {
     tasks: []
 };
-
+// Define the taskReducer function with the initial state and an action parameter
 const taskReducer = (state = initialState, action) => {
+     // Switch statement to handle different action types
     switch (action.type) {
         case 'ADD_TASK':
             return {
@@ -13,6 +14,7 @@ const taskReducer = (state = initialState, action) => {
         case 'TOGGLE_TASK_COMPLETION':
             return {
                 ...state,
+                 // Map through tasks and toggle completion status of the specified task
                 tasks: state.tasks.map((task, index) =>
                     index === action.payload ? { ...task, completed: !task.completed } : task
                 )
