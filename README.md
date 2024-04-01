@@ -5,9 +5,13 @@ This is a simple To-Do List application built using React.js and Redux. It allow
 Features:
 
 Add new tasks to the list.
+
 Mark tasks as completed.
+
 Delete tasks from the list.
+
 Reorder tasks by moving them up or down.
+
 Tasks are saved to local storage, so they persist even after page reload.
 
 Installation :
