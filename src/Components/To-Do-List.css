@@ -1,0 +1,112 @@
+body{
+    background: hsl(0 0% 0% / 0.95);
+    margin: 0;  
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.to-do-list{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+ }
+ h1{
+    font-size: 3rem;
+    color: white;
+ }
+ button{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-right: 10px;
+}
+ .add-btn{
+    background-color: hsl(125, 47%, 54%);
+ }
+ .add-btn:hover {
+  background-color: green;
+}
+.delete-btn{
+    background-color: rgba(250, 43, 7, 0.788);
+    padding: 8px 12px;
+    font-size: 1rem;
+}
+.delete-btn:hover{
+    background-color: red;
+}
+.move-btn{
+    background-color: rgba(22, 22, 240, 0.884);
+    padding: 8px 10px;
+    font-size: 1rem;
+}
+.move-btn:hover{
+    background-color: blue;
+}
+.input-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    padding: 10px;
+}
+input{
+    outline: none;
+    width: 100%;
+    
+}
+input[type="text"]{
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-size: 1.56rem;
+}
+ol{
+    padding: 0;
+    
+}
+li{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    padding: 15px;
+    background-color: antiquewhite;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-width: 100%;
+    width: 97%;
+
+}
+.task-text{
+    flex: 1;
+    font-size: 2rem;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  .complete-btn{
+    background: rgba(236, 236, 27, 0.705);
+    border-radius:4px ;
+    font-size: 1.4rem;
+  }
+
+   
+  .delete-btn:hover,
+  .move-btn:hover {
+      opacity: 0.8;  
+  }
+
+@media(max-width : 600px){
+        
+    li{
+        width:88%
+    }
+}
