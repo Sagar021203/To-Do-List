@@ -1,4 +1,5 @@
-To-Do List App : 
+#To-Do List App :
+
 This is a simple To-Do List application built using React.js and Redux. It allows users to add, delete, mark as complete, and reorder tasks.
 
 Features:
@@ -19,14 +20,14 @@ cd to-do-list
 
 Install dependencies using npm or yarn:
 npm install
-# or
+or
 yarn install
 
 Usage:
 
 Start the development server:
 npm start
-# or
+or
 yarn start
 
 Open your browser and visit http://localhost:3000 to view the application.
