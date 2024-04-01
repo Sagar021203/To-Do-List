@@ -3,9 +3,10 @@ import React from 'react';
 import './To-Do-List.css';
 
 function TaskList({ tasks, onDeleteTask, onMoveUp, onMoveDown,onToggleCompletion }) {
+ // Handler function to toggle completion of a task
   const handleToggle = (index) => {
-    console.log("Toggling task at index:", index);
-    onToggleCompletion(index);
+    console.log("Toggling task at index:", index);// Log the index of the task being toggled
+    onToggleCompletion(index);// Call the onToggleCompletion function passed from the parent component
   };
   return (
     <ol>
